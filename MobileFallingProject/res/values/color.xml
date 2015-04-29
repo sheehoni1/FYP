@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="header_footer_color">#112E3C</color>
+    <color name="actionbar_background">#5da4d5</color>
+    <color name="text_black_color">#000000</color>
+    <color name="tv_text_color">#FFFFFF</color>
+    <color name="login_here_color">#255470</color>
+
+</resources>

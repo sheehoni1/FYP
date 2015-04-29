@@ -1,0 +1,333 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_all_main_layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/border_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_bg"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/ly_setting_logo_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_logo_login_setting"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logo_login" />
+
+                <TextView
+                    android:id="@+id/iv_login_here_logo_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/setting_txt"
+                    android:textColor="@color/login_here_color"
+                    android:textSize="@dimen/login_here_text_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_fill_gap_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/ly_setting_logo_layout" />
+
+            <ScrollView
+                android:id="@+id/scrollview_all_fields_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_fill_gap_setting" 
+                
+                >
+
+                <RelativeLayout
+                    android:id="@+id/ly_main_layout_in_scrolling"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                         android:id="@+id/ly_find_contact_setting"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                      
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/username_bg_img"
+                        android:orientation="horizontal"
+                        
+                       >
+                       
+
+                        <TextView
+                            android:id="@+id/name_setting"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:text="Find Contact"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear2_setting"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/ly_find_contact_setting"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/username_bg_img"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/et_revicer_name_setting"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="Reciever name"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_reviever_contact_setting"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/linear2_setting"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/username_bg_img"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/et_revicer_contact_setting"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="Reciever contact"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearly_set_ringtone_setting"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/ly_reviever_contact_setting"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/username_bg_img"
+                        android:gravity="bottom"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_setting"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Set Rington"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white" />
+                    </LinearLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rl_check_box_sms_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearly_set_ringtone_setting"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_check_sms_setting"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" >
+
+                            <ImageView
+                                android:id="@+id/iv_checkbox_sms_setting"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/check_box" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sms_setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/rl_check_sms_setting"
+                            android:gravity="center"
+                            android:text="SMS"
+                            android:textColor="@android:color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_check_box_call_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_check_box_sms_setting"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_check_call_setting"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" >
+
+                            <ImageView
+                                android:id="@+id/iv_checkbox_call_setting"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/check_box" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_call_setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/rl_check_call_setting"
+                            android:gravity="center"
+                            android:text="CALL"
+                            android:textColor="@android:color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_check_box_email_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_check_box_call_setting"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp" 
+                        android:visibility="gone"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_check_email_setting"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" >
+
+                            <ImageView
+                                android:id="@+id/iv_checkbox_email_setting"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/check_box" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_email_setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/rl_check_email_setting"
+                            android:gravity="center"
+                            android:text="EMAIL"
+                            android:textColor="@android:color/white"
+                          
+                             />
+                    </RelativeLayout> 
+                    
+                     <LinearLayout
+                        android:id="@+id/ly_reviever_email_setting"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/rl_check_box_email_setting"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/username_bg_img"
+                        android:orientation="horizontal"
+                          android:visibility="gone"
+                        
+                         >
+
+                        <EditText
+                            android:id="@+id/et_revicer_email_setting"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="Reciever Email"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white" 
+                            
+                            />
+                    </LinearLayout>
+                    
+                  <RelativeLayout
+                        android:id="@+id/rl_submit_button_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ly_reviever_email_setting"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="5dp" >
+
+                        <Button
+                            android:id="@+id/btn_submit_data"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/username_bg_img"
+                            android:gravity="center"
+                            android:text="Submit Setting"
+                            android:textColor="@color/tv_text_color"
+                            android:textSize="15dp" 
+                            
+                            />
+                    </RelativeLayout> 
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

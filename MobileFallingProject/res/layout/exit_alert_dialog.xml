@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#b0b0b0"
+    android:padding="1dp">
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/header_footer_color">
+
+    <TextView 
+        android:id="@+id/alert_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/tv_text_color"
+        android:typeface="sans"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        android:layout_margin="10dp"
+        android:text="Are you sure want to exit."/>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        >
+        <Button 
+            android:id="@+id/yes_button"
+            android:layout_height="30dp"
+            android:layout_width="100dp"
+            android:layout_marginRight="5dp"
+            android:text="Yes"
+            android:typeface="sans"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_bg"
+            android:layout_toLeftOf="@+id/divide_button"
+           />
+        <Button 
+            android:id="@+id/divide_button"
+            android:layout_height="30dp"
+            android:layout_width="1dp"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+           />
+        <Button 
+            android:id="@+id/no_button"
+            android:layout_height="30dp"
+            android:text="No"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_width="100dp"
+            android:typeface="sans"
+            android:background="@drawable/btn_bg"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/divide_button"
+           />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent">
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

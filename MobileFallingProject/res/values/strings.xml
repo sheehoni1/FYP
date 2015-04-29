@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+ <string name="hello">Hello World, AudioRecordingActivity!</string> 
+    <string name="app_info">This is a sample application to record audio.\n\nTo start recording press \"Record\" button, to stop recording press \"Stop\" button.</string>
+    <string name="app_name">MobileFalling</string>
+ <string name="choose_format_title">Choose Audio Format</string>
+    <string name="start_recording">Record</string>
+    <string name="stop_recording">Stop</string>
+    <string name="audio_format">Format</string> 
+ <string name="image_description">image description</string>
+  <string name="net_connecton_error">Please check network connection </string>
+  <string name="tv_already_account">Already have an account</string>
+  <string name="login_here_txt">Log In Here</string>
+   <string name="setting_txt">Setting Put Here</string>
+   <string name="register_txt">Register Now</string>
+</resources>
